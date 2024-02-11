@@ -1,0 +1,5 @@
+services:
+  pd-int-authentication:
+    build: .
+    image: pd-int-authentication
+    container_name: pd-int-authentication

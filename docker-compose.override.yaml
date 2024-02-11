@@ -1,0 +1,12 @@
+services:
+  pd-int-authentication:
+    build:
+      target: development
+    image: pd-int-authentication-development
+    container_name: pd-int-authentication-development
+    ports:
+      - "3001:3001"
+      - "9230:9230"
+    volumes:
+      - ./app:/home/node/app
+      - ./package.json:/home/node/package.json
